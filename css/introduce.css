@@ -1,0 +1,23 @@
+*{margin: 0;padding: 0;}
+
+#all{
+	width:1000px;
+	height:1000px;
+	background: #000;
+	margin: 0 auto;
+}
+
+#gameRule{
+	color:#fefefe;
+	font-size: 16px;
+}
+
+.Level{
+	width:20%;
+	height:10%;
+	background:#ff9933 ;
+	text-align: center;
+	line-height: 555%;
+	margin: 8% auto;
+	border-radius: 20%;
+}

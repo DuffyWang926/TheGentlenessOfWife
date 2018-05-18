@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/introduce.css"/>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="all">
+			<marquee  id="gameRule" behavior="scroll" direction="left" scrollamount="15">游戏规则：看老婆心情。</marquee>
+			<div class="Level"  id="firstLevel">
+				<p>初见</p>
+			</div>
+			<div class="Level"  id="secondLevel">
+				<p>思念</p>
+			</div>
+			<div class="Level"  id="thirdLevel">
+				<p>依恋</p>
+			</div>
+			<div class="Level"  id="thirdLevel">
+				<p>习惯</p>
+			</div>
+			<div class="Level"  id="thirdLevel">
+				<p>折腾</p>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	(function(){
+		var firstLevel = $id("firstLevel"),
+		secondLevel = $id("secondLevel"),
+		thirdLevel = $id("thirdLevel");
+		
+		firstLevel.onclick=function(){
+			open("firstLevel.html","_self",false);
+		}
+	})()
+</script>

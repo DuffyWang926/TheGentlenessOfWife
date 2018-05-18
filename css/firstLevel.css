@@ -1,0 +1,266 @@
+*{margin:0;padding:0;}
+html{font-size:100px;}
+body{font-size: 14px;}
+
+#all{
+	width:10rem;
+	height:10rem;
+	background: url(../img/bgd.jpg) left top;
+	background-size: cover;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#saying{
+	color:#fe23c3;
+	font-size: .20rem;
+	height:.22rem;
+	font-weight: bold;
+}
+
+#playView{
+	width:10rem;
+	height:9.7rem;
+	background: url(../img/bgd.jpg) no-repeat left top;
+	background-size:cover;
+	position: absolute;
+	
+}
+/*人物*/
+#person{
+	width:1.06rem;
+	height:2rem;
+	position:absolute;
+	left:0;
+	top:3.16rem;
+	z-index: 10;
+	/*border:#000000 1px solid;*/
+}
+
+#person>img{
+	width:1.06rem;
+	height:2rem;
+}
+
+#kitty{
+	width:2rem;
+	height:1.41rem;
+	position:absolute;
+}
+
+#kitty>img{
+	width:2rem;
+}
+
+/*礼物*/
+#present{
+	width:50px;
+	height:50px;
+	/*position:absolute;
+	left:200px;
+	top:0;*/
+}
+
+#sayLove{
+	width:300px;
+	height:50px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+	color:#fe23c3;
+	position: absolute;
+	left:35%;
+	top:57%;
+	z-index: 11;
+}
+
+#score>img{
+	width:25px;
+	height:25px;
+	float:left;
+}
+
+.presentBox{
+	width:50px;
+	height:50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	color:#f0f;
+	background: #ff0;
+	border-radius: 50%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+/*游戏手柄*/
+#gameDirection{
+	
+	width:2.6rem;
+	height: 2.6rem;
+	position:absolute;
+	left:0;
+	top:60%;
+}
+
+.gamePad{
+	width:1rem;
+	height:1rem;
+	background:url(../img/gamePad.png) no-repeat center ;
+	font-size: .35rem;
+	color:#4cfe23;
+	text-align: center;
+	line-height: 300%;
+	border-radius: 50%;
+	position:absolute;
+	
+}
+
+#gameLeft{
+	left:0;
+	top:.8rem;
+}
+
+#gameRight{
+	right:0;
+	top:.8rem;
+}
+
+#gameUp{
+	left:.8rem;
+	top:0;
+}
+
+#gameDown{
+	left:.8rem;
+	top:1.6rem;
+}
+
+#gameFunction{
+	width:2.6rem;
+	height: 2.6rem;
+	position:absolute;
+	left:7.4rem;
+	top:60%;
+}
+
+#FunctionA{
+	left:0;
+	top:.8rem;
+	
+}
+
+#FunctionB{
+	right:0;
+	top:.8rem;
+}
+
+#FunctionC{
+	left:.8rem;
+	top:0;
+}
+
+#FunctionD{
+	left:.8rem;
+	top:1.6rem;
+}
+
+#ground{
+	width:10rem;
+	height:auto;
+	position:absolute;
+	left:0;
+	top:5rem;
+	
+}
+
+#groundBg{
+	width:10rem;
+	height:1.1rem;
+	/*background: url(../img/greenGroud2.gif) no-repeat 0 top ;*/
+	background-position-x:-0.1rem;
+	background-size:cover;
+	position: absolute;
+}
+
+.bgMove{
+	animation: bgMoveback 5s linear 0s infinite;
+}
+
+@-webkit-keyframes bgMoveback{
+	0%{left:0;}
+	100%{left:-12.5rem;}
+	
+	
+}
+
+.alterMove{
+	animation: alterMove 5s linear 0s infinite;
+}
+
+@-webkit-keyframes alterMove{
+	0%{left:0;}
+	50%{left:8rem;}
+	100%{left:0;}
+}
+
+/*enemy*/
+#enemyBox{
+	width:150px;
+	height:150px;
+	position:absolute;
+	left:1000px;
+	top:400px;
+	border-radius: 50%;
+	
+/*	z-index: 10;*/
+	
+}
+
+#boxTop{
+	width:100px;
+	height:50px;
+	background: #f0f;
+	transform:skewX(-45deg);
+	transform-origin: bottom;
+	position:absolute;
+	left: 0;
+	top:0px;
+}
+#boxTop>img{
+	width:100px;
+	height:50px;
+}
+#boxFace{
+	width:100px;
+	height:100px;
+	
+	position:absolute;
+	left: 0;
+	top:50px;
+}
+
+#boxFace>img{
+	width:100px;
+	height:100px;
+}
+#boxSlide{
+	width:50px;
+	height:100px;
+	background: #0f0;
+	transform:skewY(-45deg);
+	transform-origin: left;
+	position:absolute;
+	left: 100px;
+	top:50px;
+}
+#boxSlide>img{
+	width:50px;
+	height:100px;
+	
+}
+
+
